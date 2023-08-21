@@ -1,9 +1,9 @@
 name: Infer
 on:
   push:
-run-infer:
+jobs:
+  run-infer:
     runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
