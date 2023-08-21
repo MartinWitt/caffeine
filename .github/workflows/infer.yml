@@ -10,7 +10,7 @@ jobs:
         with:
             fetch-depth: 0
       - name : run infer action
-        uses: docker://ghcr.io/martinwitt/infer-train:master
+        uses: docker://ghcr.io/martinwitt/infer-train:master@sha256:3040637b43fe7410e57678af2aeed18ff16ecfe4e51175801cb07d8b54b5cb31
         with:
             build-command: "gradle compileJava"
             use-annotations: "true"
